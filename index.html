@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body class="bg-slate-700 w-[100%] mt-[-40px]">
+
+    <h1 class="text-white font-arial capitalize text-5xl 2xl:container mt-20 text-center"><strong
+            class="text-purple-700">B</strong>ody <strong class="text-purple-700">M</strong>ass <strong
+            class="text-purple-700">I</strong>ndex Calculator</h1>
+
+    <div class="flex justify-center items-center border-2 w-[60%] mx-auto bg-blue-200 pb-5 flex-wrap flex-col mt-8">
+        <div class="w-full flex mt-5">
+            <label for="age" class=" flex w-full justify-center font-arial text-2xl">Age </label>
+            <input type="text"
+                class="flex w-full border-2 transition duration-500 focus:border-2 focus:border-red-700 justify-center items-center mr-9" id="age">
+        </div>
+        <div class="w-full flex mt-10">
+            <label for="weight" class=" flex w-full justify-center font-arial text-2xl">Weight(kg) </label>
+            <input type="text"
+                class="flex w-full border-2 transition duration-500 focus:border-2 focus:border-red-700  justify-center items-center mr-9" id="weight">
+        </div>
+        <div class="w-full flex mt-10">
+            <label for="height" class=" flex w-full justify-center font-arial text-2xl">Height(cm) </label>
+            <input type="text" class="flex w-full transition duration-500 
+             justify-center items-center mr-9 focus:border-2 focus:border-red-700 " id="height">
+        </div>
+        <button 
+            class="px-5 text-black bg-white py-2 flex justify-center items-center font-arial mt-12 border-2 border-black transition duration-500 hover:text-white hover:bg-black" onclick="calc()">
+            Calculate
+        </button>
+    </div>
+    <div class="hidden justify-center flex-wrap items-center mt-8 border-2 bg-white border-purple-900 w-[60%] mx-auto pb-6 flex-col" id="final">
+        <h2 class="flex justify-center items-center font-bold text-center font-arial flex-wrap text-4xl mt-6 mx-auto" id="result"></h2>
+        <span class="flex justify-center items-center flex-wrap font-bold font-arial mt-10 text-center mx-auto text-2xl" id="bmi"></span>
+        <button class="flex justify-center items-center border-2 border-orange-700 font-arial mt-10 mx-auto text-white text-2xl bg-orange-700 transition duration-500 hover:text-orange-700 hover:bg-white px-5 py-3" id="refresh">Refresh</button>
+    </div>
+</body>
+<script src="js/master.js"></script>
+
+</html>
